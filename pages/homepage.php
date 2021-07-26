@@ -13,16 +13,7 @@ echo '<a href="./csm_page.php?id=">CSM Board</a><br><br>';
 echo '<a href="./csmb_page.php?id=">CSMB Board</a>';
 echo '</pre>';
 
-$grades = "1,5,3,3,6,88,0,0";
 
-$student = new Student("Joco", $grades);
-
-$arr = explode(",", $student->get_grades());
-foreach($arr as $a)
-{
-    if($a > 2) continue;
-    echo $a;
-}
 
 
 //$csm = new CSM("CSM Board");
